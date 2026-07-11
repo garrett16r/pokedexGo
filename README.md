@@ -1,5 +1,3 @@
-[![Auto Build and Release](https://github.com/garrett16r/pokedexGo/actions/workflows/autoBuildRelease.yml/badge.svg)](https://github.com/garrett16r/pokedexGo/actions/workflows/autoBuildRelease.yml)
-
 # pokedexGo
 Look up Pokedex info through CLI. A rewrite of my [pokedexPy](https://github.com/garrett16r/pokedexPy) project in Go.
 
