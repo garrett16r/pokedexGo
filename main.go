@@ -250,7 +250,7 @@ func main() {
 		fmt.Println("For megas, use the format 'pokemon-mega'")
 		fmt.Println("For regional forms, use the format 'pokemon-alola' or 'pokemon-galar'")
 		fmt.Println("Replace any spaces or other punctuation with '-' (e.g. 'mr-mime', 'nidoran-m')")
-		fmt.Println("Find a full list of pokemon names in ./cache/pokemon_names.txt")
+		fmt.Println("Find a full list of pokemon names in ./cache/pokemonNames.txt")
 		fmt.Println("Exiting.")
 		os.Exit(0)
 	}
@@ -259,7 +259,7 @@ func main() {
 	apiPokemonName, prettyPokemonName := normalizeName(rawName)
 
 	if !isValidPokemonName(apiPokemonName) {
-		log.Fatalf("Invalid Pokemon name [%s]! Find a full list of pokemon names in ./cache/pokemon_names.txt", apiPokemonName)
+		log.Fatalf("Invalid Pokemon name [%s]! Find a full list of pokemon names in ./cache/pokemonNames.txt", apiPokemonName)
 	}
 
 	if isNotCached(apiPokemonName) {

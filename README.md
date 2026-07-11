@@ -16,6 +16,6 @@ Data is pulled from the amazing [PokeAPI](https://pokeapi.co) project.
 - On first run, two folders will be created in the same directory as pokedexGo
 - `cache/` stores previously pulled Pokemon data and a list of all valid Pokemon names
 - `types/` stores one .json file per type, which will be used for calculating type weaknesses and resistances
-- pokemon_names.txt and type JSON files will also be downloaded from PokeAPI at this time
+- pokemonNames.txt and type JSON files will also be downloaded from PokeAPI at this time
 
 - Regional forms and mega evolutions are supported. Using Alolan Ninetales as an example, "Alolan Ninetales" and "ninetales-alola" will both be accepted. The same formats are accepted for megas.
