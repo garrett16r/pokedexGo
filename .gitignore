@@ -7,6 +7,7 @@
 *.dll
 *.so
 *.dylib
+pokedexGo-linux-amd64*
 
 # Test binary, built with `go test -c`
 *.test
