@@ -36,3 +36,4 @@ types/
 
 # Built executable
 pokedexGo
+build.sh
