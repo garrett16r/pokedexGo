@@ -26,8 +26,8 @@ func initialize() {
 		log.Fatal(err)
 	}
 
-	cacheDir = fmt.Sprint(programDir, "pokedexGo/cache")
-	typesDir = fmt.Sprint(programDir, "pokedexGo/types")
+	cacheDir = fmt.Sprint(programDir, "/pokedexGo/cache")
+	typesDir = fmt.Sprint(programDir, "/pokedexGo/types")
 	pokemonNamesFile = fmt.Sprint(cacheDir, "/pokemonNames.txt")
 
 	_, err = os.Stat(cacheDir)
