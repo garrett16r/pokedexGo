@@ -26,8 +26,8 @@ func initialize() {
 		log.Fatal(err)
 	}
 
-	cacheDir = fmt.Sprint(programDir, "/cache")
-	typesDir = fmt.Sprint(programDir, "/types")
+	cacheDir = fmt.Sprint(programDir, "pokedexGo/cache")
+	typesDir = fmt.Sprint(programDir, "pokedexGo/types")
 	pokemonNamesFile = fmt.Sprint(cacheDir, "/pokemonNames.txt")
 
 	_, err = os.Stat(cacheDir)
@@ -250,7 +250,7 @@ func main() {
 		fmt.Println("For megas, use the format 'pokemon-mega'")
 		fmt.Println("For regional forms, use the format 'pokemon-alola' or 'pokemon-galar'")
 		fmt.Println("Replace any spaces or other punctuation with '-' (e.g. 'mr-mime', 'nidoran-m')")
-		fmt.Println("Find a full list of pokemon names in ./cache/pokemonNames.txt")
+		fmt.Println("Find a full list of pokemon names in .pokedexGo/cache/pokemonNames.txt")
 		fmt.Println("Exiting.")
 		os.Exit(0)
 	}
@@ -259,7 +259,7 @@ func main() {
 	apiPokemonName, prettyPokemonName := normalizeName(rawName)
 
 	if !isValidPokemonName(apiPokemonName) {
-		log.Fatalf("Invalid Pokemon name [%s]! Find a full list of pokemon names in ./cache/pokemonNames.txt", apiPokemonName)
+		log.Fatalf("Invalid Pokemon name [%s]! Find a full list of pokemon names in .pokedexGo/cache/pokemonNames.txt", apiPokemonName)
 	}
 
 	if isNotCached(apiPokemonName) {
